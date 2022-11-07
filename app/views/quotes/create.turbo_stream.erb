@@ -3,6 +3,7 @@
 
 <%= turbo_stream.prepend "quotes", @quote %>
 <%= turbo_stream.update Quote.new, "" %>
+<%= render_turbo_stream_flash_messages %>
 
 <%# The first line tells Turbo to prepend to the Turbo Frame with id quotes 
 the app/views/quotes/_quote.html.erb partial. As we can see, it's straightforward to pass 
